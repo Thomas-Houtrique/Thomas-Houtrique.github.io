@@ -1,38 +1,41 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-}
+body {
+  font-family: "Montserrat", sans-serif; }
 
-.card{
-    margin-top: 30px;
-}
+.row {
+  padding-top: 30px; }
 
-h1{
-    font-weight: bold;
-}
+i {
+  color: #047bf7;
+  font-size: 20px; }
 
-i{
-    color: #047BF7;
-}
+h1 {
+  font-weight: bold; }
 
-img{
-    display: block;
-    height: 200px;
-    width: 100%;
-}
+a:link {
+  text-decoration: none; }
 
-.row{
-    padding-top: 30px;
-}
+a:visited {
+  text-decoration: none; }
 
-.date{
-    margin-top: 10px;
-}
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+.card {
+  margin-top: 30px; }
+
+img {
+  display: block;
+  height: 200px;
+  width: 100%; }
+
+.date {
+  margin-top: 10px; }
 
 @media only screen and (max-width: 767px) {
-    img{
-        display: inline;
-    }
-    .alert{
-        margin-top: 30px;
-    }
-    }
+  img {
+    display: inline; }
+  .alert {
+    margin-top: 30px; } }

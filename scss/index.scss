@@ -1,0 +1,118 @@
+@import "_commun.scss";
+
+body {
+  overflow: hidden;
+}
+
+p {
+  color: #5c5c5c;
+  font-size: 19px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #363636;
+  padding-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #363636;
+}
+
+.blue {
+  color: #047bf7;
+}
+
+.reverse {
+  background-color: #fff;
+  border: #047bf7 3px solid;
+  color: #5c5c5c;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-color: #047bf7;
+  width: 150px;
+  height: 50px;
+}
+
+img {
+  width: 300px;
+}
+
+.second {
+  margin-top: 50px;
+}
+
+.php {
+  width: 0;
+  animation: php 1.5s ease-in-out forwards;
+}
+.html {
+  width: 0;
+  animation: html 1.5s ease-in-out forwards;
+}
+.c {
+  width: 0;
+  animation: c 1.5s ease-in-out forwards;
+}
+.sql {
+  width: 0;
+  animation: sql 1.5s ease-in-out forwards;
+}
+.python {
+  width: 0;
+  animation: python 1.5s ease-in-out forwards;
+}
+
+@keyframes php {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10%;
+  }
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes c {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes sql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes python {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    overflow: auto;
+  }
+}

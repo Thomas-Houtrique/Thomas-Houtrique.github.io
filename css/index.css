@@ -1,145 +1,117 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
-}
+body {
+  font-family: "Montserrat", sans-serif; }
 
-.row{
-    margin-top: 30px;
-}
+.row {
+  padding-top: 30px; }
 
-
-a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    text-decoration: underline;
-  }
-
-p{
-    color: #5C5C5C;
-    font-size: 19px;
-}
+i {
+  color: #047bf7;
+  font-size: 20px; }
 
 h1 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: #363636;
-    padding-top: 40px;
-  }
+  font-weight: bold; }
 
-h2{
-    text-align: center;
-    font-weight: bold;
-    color: #363636;
-}
+a:link {
+  text-decoration: none; }
 
-.blue{
-    color: #047BF7;
-}
+a:visited {
+  text-decoration: none; }
 
-.reverse{
-    background-color: #fff;
-    border: #047BF7 3px solid;
-    color: #5C5C5C;
-    font-weight: bold;
-}
+a:hover {
+  text-decoration: none; }
 
-button{
-    border:none;
-    color: #fff;
-    background-color: #047BF7;
-    width: 150px;
-    height: 50px;
-    
-}
+a:active {
+  text-decoration: none; }
 
-img{
-    width: 300px;
-}
+body {
+  overflow: hidden; }
 
-.second{
-    margin-top: 50px;
-}
+p {
+  color: #5c5c5c;
+  font-size: 19px; }
 
-.contact{
-    position: fixed;
-    right: 10px;
-}
+h1 {
+  font-size: 3rem;
+  color: #363636;
+  padding-top: 40px; }
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #363636; }
+
+.blue {
+  color: #047bf7; }
+
+.reverse {
+  background-color: #fff;
+  border: #047bf7 3px solid;
+  color: #5c5c5c;
+  font-weight: bold; }
+
+button {
+  border: none;
+  color: #fff;
+  background-color: #047bf7;
+  width: 150px;
+  height: 50px; }
+
+img {
+  width: 300px; }
+
+.second {
+  margin-top: 50px; }
 
 .php {
-    width: 0;
-    animation: php 1.5s ease-in-out forwards;
-}
+  width: 0;
+  animation: php 1.5s ease-in-out forwards; }
+
 .html {
-    width: 0;
-    animation: html 1.5s ease-in-out forwards;
-}
+  width: 0;
+  animation: html 1.5s ease-in-out forwards; }
+
 .c {
-    width: 0;
-    animation: c 1.5s ease-in-out forwards;
-}
+  width: 0;
+  animation: c 1.5s ease-in-out forwards; }
+
 .sql {
-    width: 0;
-    animation: sql 1.5s ease-in-out forwards;
-}
+  width: 0;
+  animation: sql 1.5s ease-in-out forwards; }
+
 .python {
-    width: 0;
-    animation: python 1.5s ease-in-out forwards;
-}
+  width: 0;
+  animation: python 1.5s ease-in-out forwards; }
 
 @keyframes php {
-    from {
-      width: 0;
-    }
-    to {
-      width: 10%;
-    }
-  }
-  @keyframes html {
-    from {
-      width: 0;
-    }
-    to {
-      width: 70%;
-    }
-  } 
-  @keyframes c {
-    from {
-      width: 0;
-    }
-    to {
-      width: 20%;
-    }
-  } 
-  @keyframes sql {
-    from {
-      width: 0;
-    }
-    to {
-      width: 40%;
-    }
-  } 
+  from {
+    width: 0; }
+  to {
+    width: 10%; } }
 
-  @keyframes python {
-    from {
-      width: 0;
-    }
-    to {
-      width: 60%;
-    }
-  }
+@keyframes html {
+  from {
+    width: 0; }
+  to {
+    width: 70%; } }
+
+@keyframes c {
+  from {
+    width: 0; }
+  to {
+    width: 20%; } }
+
+@keyframes sql {
+  from {
+    width: 0; }
+  to {
+    width: 40%; } }
+
+@keyframes python {
+  from {
+    width: 0; }
+  to {
+    width: 60%; } }
 
 @media only screen and (max-width: 1200px) {
-    body{
-        overflow: auto;
-    }
-}
+  body {
+    overflow: auto; } }

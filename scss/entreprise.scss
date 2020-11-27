@@ -1,0 +1,29 @@
+@import "_commun.scss";
+
+.col-md-6 {
+  margin-top: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.imbe {
+  width: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .imbe {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

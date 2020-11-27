@@ -1,0 +1,24 @@
+@import "_commun.scss";
+
+.card {
+  margin-top: 30px;
+}
+
+img {
+  display: block;
+  height: 200px;
+  width: 100%;
+}
+
+.date {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  img {
+    display: inline;
+  }
+  .alert {
+    margin-top: 30px;
+  }
+}
