@@ -23,9 +23,6 @@ a:hover {
 a:active {
   text-decoration: none; }
 
-body {
-  overflow: hidden; }
-
 p {
   color: #5c5c5c;
   font-size: 19px; }
@@ -111,7 +108,3 @@ img {
     width: 0; }
   to {
     width: 60%; } }
-
-@media only screen and (max-width: 1200px) {
-  body {
-    overflow: auto; } }
