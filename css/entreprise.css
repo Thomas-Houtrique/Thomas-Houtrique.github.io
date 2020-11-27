@@ -26,8 +26,14 @@ i{
 @media only screen and (max-width: 767px) {
     .logo{
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .imbe{
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
