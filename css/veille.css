@@ -1,0 +1,38 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+    margin-top: 30px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+i{
+    color: #047BF7;
+}
+
+img{
+    display: block;
+    height: 200px;
+    width: 100%;
+}
+
+.row{
+    padding-top: 30px;
+}
+
+.date{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    img{
+        display: inline;
+    }
+    .alert{
+        margin-top: 30px;
+    }
+    }

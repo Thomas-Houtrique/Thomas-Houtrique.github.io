@@ -1,0 +1,33 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+    padding-top: 30px;
+}
+
+.col-md-6{
+    margin-top: 20px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.imbe{
+    width: 200px;
+}
+
+i{
+    color:#047BF7;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo{
+        margin-bottom: 20px;
+    }
+    .imbe{
+        margin-top: 20px;
+    }
+}
