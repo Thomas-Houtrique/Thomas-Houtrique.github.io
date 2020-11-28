@@ -1,12 +1,15 @@
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: 'Nunito', sans-serif; }
 
 .row {
-  padding-top: 30px; }
+  padding-top: 15px; }
 
 i {
   color: #047bf7;
   font-size: 20px; }
+
+.navbar-inner {
+  background: transparent; }
 
 h1 {
   font-weight: bold; }
@@ -23,6 +26,9 @@ a:hover {
 a:active {
   text-decoration: none; }
 
+.nav-logo {
+  width: 30px; }
+
 .card {
   margin-top: 30px; }
 
@@ -31,8 +37,14 @@ img {
   height: 200px;
   width: 100%; }
 
+i {
+  font-size: 30px; }
+
 .date {
   margin-top: 10px; }
+
+.smally {
+  font-size: 20px; }
 
 @media only screen and (max-width: 767px) {
   img {

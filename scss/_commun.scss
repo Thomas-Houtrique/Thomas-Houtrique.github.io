@@ -1,14 +1,18 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .row {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 i {
   color: #047bf7;
   font-size: 20px;
+}
+
+.navbar-inner {
+  background:transparent;
 }
 
 h1 {
@@ -29,4 +33,8 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+.nav-logo{
+  width: 30px;
 }
