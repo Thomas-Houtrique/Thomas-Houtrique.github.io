@@ -174,7 +174,19 @@
       </div>
     </div>
   </div>
-  <script src="js/index.js"></script>
+  <script>
+    let button = document.querySelector(".reverse");
+    let contact_icons = document.querySelectorAll(".contact")
+    button.addEventListener("click", function (e) {
+      button.classList.add('animate__animated', 'animate__fadeOutDown');
+    }, false);
+
+    button.addEventListener('animationend', () => {
+      button.style.display = 'none';
+      contact_icons.forEach(element => element.style.display = 'inline-block');
+      contact_icons.forEach(element => element.classList.add('animate__animated', 'animate__fadeInUp'));
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
