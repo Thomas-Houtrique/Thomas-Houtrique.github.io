@@ -1,5 +1,7 @@
+$primary: #047bf7;
+
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .row {
@@ -7,12 +9,12 @@ body {
 }
 
 i {
-  color: #047bf7;
+  color: $primary;
   font-size: 20px;
 }
 
 .navbar-inner {
-  background:transparent;
+  background: transparent;
 }
 
 h1 {
@@ -35,6 +37,6 @@ a:active {
   text-decoration: none;
 }
 
-.nav-logo{
+.nav-logo {
   width: 30px;
 }

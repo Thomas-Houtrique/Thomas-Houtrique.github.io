@@ -1,8 +1,28 @@
 @import "_commun.scss";
 
+.buttons{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+button:focus{
+  box-shadow: none;
+  outline: none;
+}
+
 p {
   color: #5c5c5c;
   font-size: 19px;
+}
+
+.competences-label{
+  margin: 0;
+  margin-top: 10px;
+}
+
+.text-center{
+  margin-top: 10px;
 }
 
 h1 {
@@ -17,22 +37,32 @@ h2 {
 }
 
 .blue {
-  color: #047bf7;
+  color: $primary;
+}
+
+.primary-button{
+  border: none;
+  background-color: $primary;
+  width: 150px;
+  height: 50px;
+  a{
+    color: #fff;
+  }
+}
+
+.contact{
+  font-size: 30px;
+  display: none;
+  margin-right: 15px;
 }
 
 .reverse {
   background-color: #fff;
-  border: #047bf7 3px solid;
-  color: #5c5c5c;
+  border: $primary 3px solid;
   font-weight: bold;
-}
-
-button {
-  border: none;
-  color: #fff;
-  background-color: #047bf7;
-  width: 150px;
-  height: 50px;
+  a{
+    color: #5c5c5c;
+  }
 }
 
 img {
