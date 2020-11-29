@@ -1,12 +1,12 @@
 @import "_commun.scss";
 
-.buttons{
+.buttons {
   display: flex;
   text-align: center;
   align-items: center;
 }
 
-button:focus{
+button:focus {
   box-shadow: none;
   outline: none;
 }
@@ -16,12 +16,12 @@ p {
   font-size: 19px;
 }
 
-.competences-label{
+.competences-label {
   margin: 0;
   margin-top: 10px;
 }
 
-.text-center{
+.text-center {
   margin-top: 10px;
 }
 
@@ -40,17 +40,18 @@ h2 {
   color: $primary;
 }
 
-.primary-button{
+.primary-button {
   border: none;
   background-color: $primary;
   width: 150px;
   height: 50px;
-  a{
-    color: #fff;
-  }
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff;
 }
 
-.contact{
+.contact {
   font-size: 30px;
   display: none;
   margin-right: 15px;
@@ -59,10 +60,7 @@ h2 {
 .reverse {
   background-color: #fff;
   border: $primary 3px solid;
-  font-weight: bold;
-  a{
-    color: #5c5c5c;
-  }
+  color: $primary;
 }
 
 img {

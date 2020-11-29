@@ -8,6 +8,10 @@ body {
   padding-top: 15px;
 }
 
+.card-header{
+  font-weight: bold;
+}
+
 i {
   color: $primary;
   font-size: 20px;
@@ -39,4 +43,10 @@ a:active {
 
 .nav-logo {
   width: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .card{
+    margin-bottom: 10px;
+  }
 }

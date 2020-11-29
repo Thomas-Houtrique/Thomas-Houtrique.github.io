@@ -4,6 +4,9 @@ body {
 .row {
   padding-top: 15px; }
 
+.card-header {
+  font-weight: bold; }
+
 i {
   color: #047bf7;
   font-size: 20px; }
@@ -28,6 +31,10 @@ a:active {
 
 .nav-logo {
   width: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 10px; } }
 
 .buttons {
   display: flex;
@@ -65,9 +72,11 @@ h2 {
   border: none;
   background-color: #047bf7;
   width: 150px;
-  height: 50px; }
-  .primary-button a {
-    color: #fff; }
+  height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff; }
 
 .contact {
   font-size: 30px;
@@ -77,9 +86,7 @@ h2 {
 .reverse {
   background-color: #fff;
   border: #047bf7 3px solid;
-  font-weight: bold; }
-  .reverse a {
-    color: #5c5c5c; }
+  color: #047bf7; }
 
 img {
   width: 300px; }

@@ -4,6 +4,9 @@ body {
 .row {
   padding-top: 15px; }
 
+.card-header {
+  font-weight: bold; }
+
 i {
   color: #047bf7;
   font-size: 20px; }
@@ -28,6 +31,10 @@ a:active {
 
 .nav-logo {
   width: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 10px; } }
 
 .col-md-6 {
   margin-top: 20px; }
