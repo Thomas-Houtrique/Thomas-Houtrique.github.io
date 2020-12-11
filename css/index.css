@@ -1,5 +1,6 @@
 body {
-  font-family: "Nunito", sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff; }
 
 .row {
   padding-top: 15px; }
@@ -48,6 +49,9 @@ button:focus {
 p {
   color: #5c5c5c;
   font-size: 19px; }
+
+.image {
+  width: 250px; }
 
 .competences-label {
   margin: 0;
