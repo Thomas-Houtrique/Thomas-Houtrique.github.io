@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #fff; }
+  background-color: #EAF0F4;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 .row {
   padding-top: 15px; }
@@ -14,6 +19,9 @@ i {
 
 .navbar-inner {
   background: transparent; }
+
+.nav-link {
+  font-weight: bold; }
 
 h1 {
   font-weight: bold; }
