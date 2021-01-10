@@ -20,7 +20,7 @@ const options = {
 const handleIntersect = function (entries, observer) {
     entries.forEach(function (entry) {
         if (entry.intersectionRatio > threshold) {
-            entry.target.classList.add('animate__fadeInUp')
+            entry.target.classList.add('reveal-visible')
             observer.unobserve(entry.target)
         }
     })
@@ -34,7 +34,6 @@ targets.forEach(function (target) {
 fetch('https://api.github.com/users/Thomas-Houtrique/repos?sort=created&per_page=3')
     .then((resp) => resp.json())
     .then(function (data) {
-        console.log(data)
         const final = data.map(elem => [elem.name, elem.description, elem.created_at, elem.html_url]);
         document.querySelectorAll('.flip-card-front > h3').forEach(function (Element, i) {
             Element.innerHTML = final[i][0]
@@ -52,3 +51,17 @@ fetch('https://api.github.com/users/Thomas-Houtrique/repos?sort=created&per_page
             Element.href = final[i][3]
         })
     })
+
+const button = document.querySelector(".reverse");
+const contact_link = document.querySelectorAll(".reveal-icons")
+button.addEventListener("click", function (e) {
+    button.classList.add('disapear');
+    button.addEventListener('transitionend', () => {
+        button.style.display = 'none';
+        contact_link.forEach(function (element) {
+            element.style.height = "auto";
+            element.querySelector('.contact').style.fontSize = '30px';
+            element.classList.add('reveal-visible');
+        });
+    });
+}, false);

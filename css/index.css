@@ -45,13 +45,46 @@ a:active {
   .card {
     margin-bottom: 10px; } }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px; }
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px; }
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; }
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000; }
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px; }
+
+::-webkit-scrollbar-track:hover {
+  background: #666666; }
+
+::-webkit-scrollbar-track:active {
+  background: #333333; }
+
+::-webkit-scrollbar-corner {
+  background: transparent; }
+
 .buttons {
   display: flex;
   text-align: center;
   align-items: center; }
   .buttons :hover {
     transform: translateY(-3px);
-    transition: .5s; }
+    transition: 0.5s; }
 
 button:focus {
   box-shadow: none;
@@ -89,7 +122,7 @@ h2 {
 
 .flip-card {
   background: #ffffff;
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   height: 250px;
   padding: 15px;
   border-radius: 10px;
@@ -103,7 +136,8 @@ h2 {
   transition: transform 0.6s;
   transform-style: preserve-3d; }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -143,7 +177,6 @@ h3 {
 
 .contact {
   font-size: 30px;
-  display: none;
   margin-right: 15px; }
 
 .reverse {
@@ -173,17 +206,18 @@ img {
   height: 20px;
   width: 20px; }
 
-.formation_table > table {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.reveal {
-  opacity: 0; }
+.formation_table {
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  border-radius: 15px;
+  padding: 20px; }
+  .formation_table .table {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .card-competence {
   background: #ffffff;
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   flex: 1 0 30%;
   margin: 15px;
   text-align: center;
@@ -195,7 +229,7 @@ img {
     width: 100%;
     padding-top: 10%; }
   .card-competence p {
-    color: #A9AAAF;
+    color: #a9aaaf;
     font-weight: bold;
     padding-top: 15px;
     font-size: 20px; }
@@ -205,7 +239,7 @@ img {
   flex-wrap: wrap; }
 
 .flip-card-back > p {
-  color: #A9AAAF;
+  color: #a9aaaf;
   font-weight: bold;
   font-size: 20px; }
 
@@ -214,8 +248,30 @@ img {
   font-weight: bold;
   font-size: 20px; }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px); }
+
+.reveal-icons {
+  opacity: 0;
+  height: 0;
+  transform: translateY(30px); }
+  .reveal-icons i {
+    font-size: 0px; }
+
+.disapear {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: 1s; }
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s; }
+
 @media only screen and (max-width: 991px) {
-  #first > .row > .col-lg-8, .col-lg-4 {
+  #first > .row > .col-lg-8,
+  .col-lg-4 {
     text-align: center; }
   .buttons {
     justify-content: center; }
@@ -231,7 +287,7 @@ img {
     display: block;
     height: 0;
     width: 0;
-    border-top: 50px solid #FF6B6C;
+    border-top: 50px solid #ff6b6c;
     border-right: 29px solid transparent;
     border-left: 21px solid transparent; }
   @keyframes yourAnimation {
@@ -244,4 +300,8 @@ img {
     75% {
       transform: translateY(5px); }
     100% {
-      transform: rotate(xx) translateY(0px); } } }
+      transform: rotate(xx) translateY(0px); } }
+  .reveal-2 {
+    transition-delay: .3s; }
+  .reveal-3 {
+    transition-delay: .6s; } }

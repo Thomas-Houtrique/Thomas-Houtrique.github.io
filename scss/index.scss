@@ -1,12 +1,46 @@
 @import "_commun.scss";
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .buttons {
   display: flex;
   text-align: center;
   align-items: center;
-  :hover{
+  :hover {
     transform: translateY(-3px);
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -49,19 +83,17 @@ h2 {
   color: $primary;
 }
 
-.card-row > .row{
+.card-row > .row {
   margin-top: 50px;
 }
 
-
 .flip-card {
   background: #ffffff;
-  box-shadow:  20px 20px 60px #d9d9d9,
-               -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   height: 250px;
   padding: 15px;
   border-radius: 10px;
-  perspective: 1000px; 
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -73,7 +105,8 @@ h2 {
   transform-style: preserve-3d;
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -89,12 +122,12 @@ h2 {
   transform: rotateY(180deg);
 }
 
-.flip-card-back{
-  img{
+.flip-card-back {
+  img {
     height: 30%;
     margin-top: 50px;
   }
-  p{
+  p {
     margin-top: 10px;
   }
 }
@@ -114,15 +147,13 @@ h2 {
   color: #fff;
 }
 
-h3{
+h3 {
   text-align: center;
   font-weight: bold;
   color: #474747;
 }
 
 .contact {
-  font-size: 30px;
-  display: none;
   margin-right: 15px;
 }
 
@@ -136,15 +167,15 @@ img {
   width: 300px;
 }
 
-#first{
+#first {
   min-height: 100vh;
 }
 
-#second{
+#second {
   margin-top: 50px;
 }
 
-.svg{
+.svg {
   display: block;
   width: 400px;
   margin: 0 auto;
@@ -155,106 +186,138 @@ img {
   margin-bottom: 10%;
 }
 
-.check{
+.check {
   height: 20px;
   width: 20px;
 }
 
-.formation_table > table{
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.formation_table{
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  .table{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.reveal{
-  opacity: 0;
-}
-
-.card-competence{
-background: #ffffff;
-box-shadow:  20px 20px 60px #d9d9d9,
-             -20px -20px 60px #ffffff;
+.card-competence {
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   flex: 1 0 30%;
   margin: 15px;
   text-align: center;
   height: 150px;
   width: 200px;
   border-radius: 10px;
-  img{
+  img {
     height: 80px;
     width: 100%;
     padding-top: 10%;
   }
-  p{
-    color: #A9AAAF;
+  p {
+    color: #a9aaaf;
     font-weight: bold;
     padding-top: 15px;
     font-size: 20px;
   }
 }
 
-.competence-wrapper{
+.competence-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.flip-card-back > p{
-    color: #A9AAAF;
-    font-weight: bold;
-    font-size: 20px;
+.flip-card-back > p {
+  color: #a9aaaf;
+  font-weight: bold;
+  font-size: 20px;
 }
-.flip-card-front{
-  p{
+.flip-card-front {
+  p {
     color: #87919b;
     font-weight: bold;
     font-size: 20px;
   }
 }
 
+.reveal{
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-icons{
+  i{
+    font-size: 0px;
+  }
+  opacity: 0;
+  height: 0;
+  transform: translateY(30px);
+}
+
+.disapear{
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.reveal-visible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
 
 @media only screen and (max-width: 991px) {
-  #first > .row > .col-lg-8,.col-lg-4{
+  #first > .row > .col-lg-8,
+  .col-lg-4 {
     text-align: center;
   }
   .buttons {
     justify-content: center;
   }
-  .flip-card{
+  .flip-card {
     margin-top: 20px;
   }
 }
 
-
 @media only screen and (min-width: 991px) {
-  .triangle_wrapper{
+  .triangle_wrapper {
     margin-top: 100px;
   }
-  
-  .triangle{
+
+  .triangle {
     animation: yourAnimation 3s infinite 0s linear;
     margin: 0 auto;
-    display : block;
-    height : 0;
-    width : 0;
-    border-top : 50px solid #FF6B6C;
-    border-right : 29px solid transparent;
-    border-left : 21px solid transparent;
-   }
-   @keyframes yourAnimation{
-    0%{
-        transform: translateY(0px);
-        }
-    25%{
-        transform: translateY(5px);
-        }
-    50%{
-        transform: translateY(10px);
-        }
-    75%{
-        transform: translateY(5px);
-        }
-    100%{
-        transform: rotate(xx) translateY(0px);
-        }
-}
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 50px solid #ff6b6c;
+    border-right: 29px solid transparent;
+    border-left: 21px solid transparent;
+  }
+  @keyframes yourAnimation {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    75% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: rotate(xx) translateY(0px);
+    }
+  }
+  .reveal-2{
+    transition-delay: .3s;
+  }
+  
+  .reveal-3{
+    transition-delay: .6s;
+  }
 }
