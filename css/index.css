@@ -173,10 +173,10 @@ h2 {
 h3 {
   text-align: center;
   font-weight: bold;
+  font-size: 23px;
   color: #474747; }
 
 .contact {
-  font-size: 30px;
   margin-right: 15px; }
 
 .reverse {
@@ -276,7 +276,9 @@ img {
   .buttons {
     justify-content: center; }
   .flip-card {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .svg {
+    width: 100%; } }
 
 @media only screen and (min-width: 991px) {
   .triangle_wrapper {
