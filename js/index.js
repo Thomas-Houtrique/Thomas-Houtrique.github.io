@@ -36,19 +36,19 @@ fetch('https://api.github.com/users/Thomas-Houtrique/repos?sort=created&per_page
     .then(function (data) {
         console.log(data)
         const final = data.map(elem => [elem.name, elem.description, elem.created_at, elem.html_url]);
-        document.querySelectorAll('.flip-card-front > h3').forEach(function(Element, i){
+        document.querySelectorAll('.flip-card-front > h3').forEach(function (Element, i) {
             Element.innerHTML = final[i][0]
         })
-        document.querySelectorAll('.flip-card-front > p').forEach(function(Element, i){
+        document.querySelectorAll('.flip-card-front > p').forEach(function (Element, i) {
             Element.innerHTML = final[i][1]
         })
-        document.querySelectorAll('.flip-card-back > p > .date').forEach(function(Element, i){
+        document.querySelectorAll('.flip-card-back > p > .date').forEach(function (Element, i) {
             epoch = Date.parse(final[i][2])
             date = new Date(epoch)
-            var options = {year: "numeric", month: "long", day: "numeric"}
+            var options = { year: "numeric", month: "long", day: "numeric" }
             Element.innerHTML = date.toLocaleString('fr-FR', options)
         })
-        document.querySelectorAll('.flip-card-back > a').forEach(function(Element, i){
+        document.querySelectorAll('.flip-card-back > a').forEach(function (Element, i) {
             Element.href = final[i][3]
         })
     })

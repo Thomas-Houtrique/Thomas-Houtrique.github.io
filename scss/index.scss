@@ -35,13 +35,12 @@ p {
 
 h1 {
   font-size: 3rem;
-  color: #363636;
+  color: #474747;
 }
 
 h2 {
   text-align: center;
-  font-weight: bold;
-  color: #363636;
+  color: #474747;
   font-size: 35px;
   margin-bottom: 20px;
 }
@@ -56,11 +55,12 @@ h2 {
 
 
 .flip-card {
-  background-color: #fff;
+  background: #ffffff;
+  box-shadow:  20px 20px 60px #d9d9d9,
+               -20px -20px 60px #ffffff;
   height: 250px;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
   perspective: 1000px; 
 }
 
@@ -117,7 +117,7 @@ h2 {
 h3{
   text-align: center;
   font-weight: bold;
-  color: #363636;
+  color: #474747;
 }
 
 .contact {
@@ -127,7 +127,7 @@ h3{
 }
 
 .reverse {
-  background-color: #eaf0f4;
+  background-color: #fff;
   border: $primary 3px solid;
   color: $primary;
 }
@@ -171,12 +171,14 @@ img {
 }
 
 .card-competence{
+background: #ffffff;
+box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
   flex: 1 0 30%;
   margin: 15px;
   text-align: center;
   height: 150px;
   width: 200px;
-  background-color: #fff;
   border-radius: 10px;
   img{
     height: 80px;
@@ -195,6 +197,20 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+.flip-card-back > p{
+    color: #A9AAAF;
+    font-weight: bold;
+    font-size: 20px;
+}
+.flip-card-front{
+  p{
+    color: #87919b;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
 
 @media only screen and (max-width: 991px) {
   #first > .row > .col-lg-8,.col-lg-4{
