@@ -225,4 +225,36 @@ box-shadow:  20px 20px 60px #d9d9d9,
 }
 
 
-
+@media only screen and (min-width: 991px) {
+  .triangle_wrapper{
+    margin-top: 100px;
+  }
+  
+  .triangle{
+    animation: yourAnimation 3s infinite 0s linear;
+    margin: 0 auto;
+    display : block;
+    height : 0;
+    width : 0;
+    border-top : 50px solid #FF6B6C;
+    border-right : 29px solid transparent;
+    border-left : 21px solid transparent;
+   }
+   @keyframes yourAnimation{
+    0%{
+        transform: translateY(0px);
+        }
+    25%{
+        transform: translateY(5px);
+        }
+    50%{
+        transform: translateY(10px);
+        }
+    75%{
+        transform: translateY(5px);
+        }
+    100%{
+        transform: rotate(xx) translateY(0px);
+        }
+}
+}
