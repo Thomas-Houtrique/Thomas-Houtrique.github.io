@@ -15,7 +15,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="scss/bootstrap.css">
 
     <!-- Google Font -->
     <link href="https://fonts.gstatic.com" rel="preconnect" />
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="scss/index.css" rel="stylesheet" />
     <link rel="icon" href="images/logo.png" />
     <title>Portofolio</title>
 </head>
@@ -68,8 +68,8 @@
                         Ateliers professionnels
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="situation-prof1.html">Situation 1</a>
-                        <a class="dropdown-item" href="#">Situation 2</a>
+                        <a class="dropdown-item" href="vlsm.html">VLSM</a>
+                        <a class="dropdown-item" href="glpi.html">GLPI</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -110,49 +110,20 @@
             <div class="card-row">
                 <h2>Derniers projets</h2>
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="flip-card reveal">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <h3></h3>
-                                    <hr>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <a href=""><img src="images/github.svg" alt=""></a>
-                                    <p>créer le : <span class="date"></span><br><span></span></p>
-                                </div>
-                            </div>
+                    <div class="col-xl-6">
+                        <div class="projets-cards reveal">
+                            <i class="fas fa-server position-absolute"></i>
+                            <p>VLSM</p>
+                            <hr>
+                            <p>Maquette utilisant le principe du VLSM sur l'outil packet tracer</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="flip-card reveal reveal-2">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <h3></h3>
-                                    <hr>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <a href=""><img src="images/github.svg" alt=""></a>
-                                    <p>créer le : <span class="date"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="flip-card reveal reveal-3">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <h3></h3>
-                                    <hr>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <a href=""><img src="images/github.svg" alt=""></a>
-                                    <p>créer le : <span class="date"></span></p>
-                                </div>
-                            </div>
+                    <div class="col-xl-6">
+                        <div class="projets-cards reveal reveal-2">
+                            <i class="fas fa-network-wired position-absolute"></i>
+                            <p>GLPI</p>
+                            <hr>
+                            <p>Installation de GLPI et configuration LDAP + FusionInventory</p>
                         </div>
                     </div>
                 </div>
@@ -273,6 +244,7 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/transition.js"></script>
 
 </body>
 

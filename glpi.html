@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQBEP2DRGF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-KQBEP2DRGF');
-    </script>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
@@ -24,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 
-    <link href="scss/entreprise.css" rel="stylesheet" />
+    <link href="scss/atelier-prof1.css" rel="stylesheet" />
     <link rel="icon" href="images/logo.png" />
     <title>Portofolio</title>
 </head>
@@ -41,7 +32,7 @@
                     <a class="nav-link" href="index.html">CV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="entreprise.html">Entreprise</a>
+                    <a class="nav-link" href="entreprise.html">Entreprise</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -63,7 +54,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Ateliers professionnels
                     </a>
@@ -79,52 +70,59 @@
         </div>
     </nav>
     <div class="container">
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <a href=""><img src="images/cnrs.png" alt=""></a>
-                </div>
-                <div class="flip-card-back">
-                  <h3>CNRS</h3>
-                  <hr>
-                  <p class="card-text"> Le Centre national de la recherche scientifique, plus connu sous son sigle CNRS, est le plus grand organisme public français de recherche scientifique.</p>
-                </div>
+        <article>
+            <img src="images/server.svg" alt="" class="undraw reveal">
+            <h1 class="text-align-center reveal reveal-2">Procédure de mise en place</h1>
+            <p class="reveal reveal-2">Temps de lecture : <span class="eta"></span></p>
+            <div class="img mt-5 reveal reveal-3">
+                <img src="images/glpi.png" alt="maquette VLSM">
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <a href=""><img src="images/imbe.png" alt=""></a>
+            <h3 class="mt-5 reveal">
+                Liste des ressources
+            </h3>
+            <p class="mt-5 reveal">
+                Dernière version de <a href="https://github.com/glpi-project/glpi/releases/latest">GLPI</a><br>
+                Dernière version de <a href="https://github.com/fusioninventory/fusioninventory-for-glpi/releases/latest">FusionInventory serveur</a><br>
+                Dernière version de <a href="https://github.com/fusioninventory/fusioninventory-agent/releases/latest">FusionInventory client</a><br>
+                Un serveur web <a href="https://www.wampserver.com">(dans notre exemple wamp)</a><br>
+                Un serveur AD
+            </p>
+            <h3 class="mt-5 reveal">
+                Installation de GLPI
+            </h3>
+            <p class="mt-4 reveal">
+                Extraire le contenu du fichier zip de glpi dans votre répertoire www ou htdocs dans notre cas www. <br>
+                Procéder à l'Installation. <br>
+                <i class="fas fa-exclamation-triangle mt-3"></i><br>
+                Si lors des tests d'extensions php certaines sont en erreurs, il vous faut les activer dans le fichier php.ini, pour cela in vous faut enlever le signe ";" devant les lignes correspondantes.
+                <div class="img">
+                    <img src="images/phpini.png" alt="maquette VLSM">
                 </div>
-                <div class="flip-card-back">
-                  <h3>IMBE</h3>
-                  <hr>
-                  <p class="card-text">IMBE est une unité mixte de recherche française, affiliée à l'Université Aix-Marseille, le CNRS, l'IRD et l'Université d'Avignon. Son siège est situé à Marseille.</p>
-                </div>
+            </p>
+            <p class="mt-4 reveal">
+                Créer une nouvelle base de données lors de l'installation 
+            </p>
+            <div class="img">
+                <img src="images/bdd.png" alt="maquette VLSM">
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5 reveal">
-          <div class="col-md-4">
-            <img src="images/undraw_team_ih79.svg" alt="" class="team">
-          </div>
-          <div class="col-md-8 d-flex align-items-center">
-              <p>Équipe composé de plusieurs experts dans leurs domaines (Linux, réseau, Windows, Système) rattachés à l'OSU (Observatoire des Sciences de l’Univers). Nous sommes actuellement 2 dans le SI de l'IMBE (Institut Méditerranéen de Biodiversité et d'Écologie marine et continentale).</p>
-          </div>
-      </div>
-      <div class="row mt-5 reveal reveal-2">
-          <div class="col-md-8 d-flex align-items-center">
-              <p>Mon rôle au sein de l'IMBE est d'aider les chercheurs de l'IMBE avec leurs divers problèmes informatiques au travers de "tickets". J'ai également des projets sur de plus longs termes comme l'automatisation de la configuration des postes Windows.</p>
-          </div>
-          <div class="col-md-4 d-flex justify-content-end">
-            <img src="images/undraw_Freelancer_re_irh4.svg" alt="" class="team">
-          </div>
-      </div>
+            <h3 class="mt-4 reveal">Installation du plugin fusion inventory</h3>
+            <p class="mt-4 reveal">
+                Extraire FusionInventory serveur dans le dossier plugin de GLPI <br>
+                Activer FusionInventory dans la partie plugin sur l'interface web de GLPI
+            </p>
+            <h3 class="mt-4 reveal">Connecter GLPI à votre AD</h3>
+            <p class="mt-4 reveal">
+                se rendre dans la partie configuration puis Authentification de GLPI<br>
+                Clicker sur annuaire LDAP puis cliquer sur + <br>
+                Remplir les informations comme ci-dessous en adaptant les champs
+            </p>
+            <div class="img">
+                <img src="images/4ISbV50wOOoi6SRNh_fkf9caRRdRU2-hYptA5tz86tZFn9hnySB274L56NHE7qLz8i2v5lBVg2Mi-AoBa5EpbI9Krobfzi8m43_9Ao8MQ1HNQK_pwZYCtRuNUq6ZLBe3B54uu9A=s360.png" alt="maquette VLSM">
+            </div>
+            <p class="mt-4 reveal">
+                <b>(&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))</b>
+            </p>
+        </article>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -133,7 +131,10 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="js/transition.js"></script>
-
+    <script src="js/readingtime.js"></script>
+    <script>
+      $('article').readingTime();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,41 @@
+@import "_commun.scss";
+
+article{
+    text-align: center;
+}
+
+h1{
+    color: #474747;
+}
+
+h3{
+    font-weight: bold;
+    color: #474747;
+    font-size: 20px;
+}
+
+.img{
+    background: #fff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+.code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    border-radius: 8px;
+    height: 150px;
+    color: #fff;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.undraw{
+    width: 200px;
+}
