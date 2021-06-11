@@ -125,4 +125,11 @@ a:link, a:visited, a:hover, a:active {
 .team {
   width: 250px;
 }
+
+@media only screen and (max-width: 991px) {
+  .flip-card {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 /*# sourceMappingURL=entreprise.css.map */

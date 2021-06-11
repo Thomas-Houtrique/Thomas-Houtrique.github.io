@@ -169,4 +169,16 @@ h3 {
 .undraw {
   width: 200px;
 }
+
+@media only screen and (max-width: 991px) {
+  .code {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .table-container {
+    overflow: scroll;
+  }
+}
 /*# sourceMappingURL=atelier-prof1.css.map */

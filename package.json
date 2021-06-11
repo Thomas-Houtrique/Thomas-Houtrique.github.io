@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Thomas-Houtrique/Thomas-Houtrique.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "vanilla-rss": "^1.4.0"
   }
 }
